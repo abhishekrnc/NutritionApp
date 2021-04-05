@@ -5,7 +5,7 @@ const app=express();
 
 // schema for foods collection
 
-const foodSchema=new.mongoose.Schema({
+const foodSchema=new mongoose.Schema({
     name:String,
     calories:Number,
     protein:Number,
