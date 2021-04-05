@@ -21,7 +21,7 @@ const FoodModel=new mongoose.model("foods",foodSchema);
 
 
 //Mongo Connection
-mongoose.connect("mongodb://127.0.0.1:27017",{  //To connect MongoDb with the file
+mongoose.connect("mongodb://127.0.0.1:27017/nutrition",{  //To connect MongoDb with the file
     useNewUrlParser:true,
     useUnifiedTopology:true
 })
