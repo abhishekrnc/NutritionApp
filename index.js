@@ -3,10 +3,19 @@ const mongoose=require('mongoose');
 
 const app=express();
 
-app.get('/demo',(req,res)=>{
-    console.log("Get request called");
-    res.send("response is done");
+mongoose.connect("mongodb://127.0.0.1:27017",{  //To connect MongoDb with the file
+    useNewUrlParser:true,
+    useUnifiedTopology:true
 })
+.then(()=> {            
+    console.log("connected");
+})
+
+
+// app.get('/demo',(req,res)=>{
+//     console.log("Get request called");
+//     res.send("response is done");
+// })
 
 
 
