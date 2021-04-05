@@ -1,0 +1,24 @@
+{
+  "name": "nutritionapp",
+  "version": "1.0.0",
+  "description": "Nutrition App",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhishekrnc/NutritionApp.git"
+  },
+  "author": "Abhishek Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhishekrnc/NutritionApp/issues"
+  },
+  "homepage": "https://github.com/abhishekrnc/NutritionApp#readme"
+}
