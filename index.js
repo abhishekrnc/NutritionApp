@@ -2,6 +2,7 @@ const express=require('express');
 const mongoose=require('mongoose');
 
 const app=express();
+app.use(express.json());  //use to convert json to readable object
 
 // schema for foods collection
 
@@ -30,9 +31,15 @@ mongoose.connect("mongodb://127.0.0.1:27017",{  //To connect MongoDb with the fi
 
 
 app.post("/food/create",(req,res)=>{
+
+   const food=req.body;
+
+    let foodObj=new FoodModel(food);
+
+    foodObj.save().then(()=>{
     res.send({status:"food stored"});
 })
-
+})
 
 // app.get('/demo',(req,res)=>{
 //     console.log("Get request called");
