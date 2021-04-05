@@ -4,7 +4,7 @@ const mongoose=require('mongoose');
 const app=express();
 
 app.get('/demo',(req,res)=>{
-
+    console.log("Get request called");
 })
 
 
