@@ -5,6 +5,7 @@ const app=express();
 
 app.get('/demo',(req,res)=>{
     console.log("Get request called");
+    res.send("response is done");
 })
 
 
