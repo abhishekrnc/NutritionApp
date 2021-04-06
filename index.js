@@ -38,7 +38,9 @@ app.post("/food/create",(req,res)=>{
 
     foodObj.save().then(()=>{
     res.send({status:"food stored"});
-})
+  })
+
+
 })
 
 // app.get('/demo',(req,res)=>{
