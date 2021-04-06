@@ -43,7 +43,12 @@ app.post("/food/create",(req,res)=>{
 
 })
 
-app.get("/food")
+app.get("/food",(req,res)=>{
+
+    let foods=await foodModel.find();
+
+    res.send();
+})
 
 // app.get('/demo',(req,res)=>{
 //     console.log("Get request called");
