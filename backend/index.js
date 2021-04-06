@@ -5,7 +5,6 @@ const app=express();
 app.use(express.json());  //use to convert json to readable object
 
 // schema for foods collection
-
 const foodSchema=new mongoose.Schema({
     name:String,
     calories:Number,
