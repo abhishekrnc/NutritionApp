@@ -45,7 +45,7 @@ app.post("/food/create",(req,res)=>{
 
 app.get("/foods",async (req,res)=>{
 
-    let foods=await foodModel.find();
+    let foods=await FoodModel.find();
 
     res.send({foods:foods});
 })
