@@ -31,7 +31,9 @@ export default class Food extends Component {
         return (
             <div className="container">
                 <div className="form-group" style={{marginTop:"30px"}}>
-                    <input className="form-control" placeholder="Search Food"/>
+                    <input className="form-control" onChange={(event)=>{
+                        this.searchFood(event.target.value)
+                    }} placeholder="Search Food"/>
                 </div>
                 <div className="search-result">
                     {
