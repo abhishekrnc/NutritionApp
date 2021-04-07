@@ -4,6 +4,7 @@ const cors=require('cors');
 
 const app=express();
 app.use(express.json());  //use to convert json to readable object
+app.use(cors());
 
 // schema for foods collection
 const foodSchema=new mongoose.Schema({
