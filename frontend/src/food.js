@@ -30,7 +30,14 @@ export default class Food extends Component {
                     <input className="form-control" placeholder="Search Food"/>
                 </div>
                 <div className="search-result">
-                    <div className="result"></div>
+                    {
+                        this.state.foods.map((food,index)=>(
+                            <div className="result" key={index}>
+                                    {food.name}
+                         </div>
+                        ))
+                    }
+                    
                 </div>
             </div>
         )
