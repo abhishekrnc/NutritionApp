@@ -29,7 +29,11 @@ export default class Food extends Component {
                 <div className="form-group" style={{marginTop:"30px"}}>
                     <input className="form-control" placeholder="Search Food"/>
                 </div>
+                <div className="search-result">
+                    <div className="result"></div>
+                </div>
             </div>
         )
     }
 }
+
