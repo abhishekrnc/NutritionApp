@@ -2,12 +2,20 @@ import React, { Component } from 'react'
 
 export default class Food extends Component {
 
+    constructor(props){
+        super(props);
+
+        this.state={
+            foods:[]
+        }
+    }
+
     componentDidMount(){
 
         fetch("http://localhost:8000/foods")
         .then((response=>response.json()))
-        .then((foods)=>{
-            console.log(foods);
+        .then((foodsResponse)=>{
+            this.setState({foods:foodsResponse});
         })
         .catch((err)=>{
             console.log(err);
