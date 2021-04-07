@@ -10,12 +10,16 @@ export default class Food extends Component {
         }
     }
 
+    searchFood(value){
+        console.log(value);
+    }
+
     componentDidMount(){
 
         fetch("http://localhost:8000/foods")
         .then((response=>response.json()))
         .then((foodsResponse)=>{
-            this.setState({foods:foodsResponse});
+            this.setState({foods:foodsResponse.foods});
         })
         .catch((err)=>{
             console.log(err);
