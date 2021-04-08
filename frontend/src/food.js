@@ -62,8 +62,9 @@ export default class Food extends Component {
 
                     <div className="product-display">
                         <table className="table">
+                            <thead>
                             <tr>
-                                <td>Name</td>
+                                <th>Name</th>
                                 <th>Calories</th>
                                 <th>Protein</th>
                                 <th>Carbs</th>
@@ -71,6 +72,18 @@ export default class Food extends Component {
                                 <th>Fat</th>
                                 <th>Weight</th>
                             </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
                         </table>
 
                     </div>
