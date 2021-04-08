@@ -7,7 +7,16 @@ export default class Food extends Component {
 
         this.state={
             foods:[],
-            searchedFoods:[]
+            searchedFoods:[],
+            currentFood:{
+                name:"-",
+                calories:0,
+                protein:0,
+                carbs:0,
+                fats:0,
+                fiber:0,
+                weight:0,
+            }
         }
     }
 
@@ -75,13 +84,13 @@ export default class Food extends Component {
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td>{this.state.currentFood.name}</td>
+                                    <td>{this.state.currentFood.calories}</td>
+                                    <td>{this.state.currentFood.protein}</td>
+                                    <td>{this.state.currentFood.carbs}</td>
+                                    <td>{this.state.currentFood.fiber}</td>
+                                    <td>{this.state.currentFood.fats}</td>
+                                    <td>{this.state.currentFood.weight}</td>
                                 </tr>
                             </tbody>
                         </table>
