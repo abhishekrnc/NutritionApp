@@ -26,7 +26,7 @@ export default class Food extends Component {
 
     searchFood(value){
 
-        if(value!=""){
+        if(value!==""){
 
         
         let searchedArray=this.state.foods.filter((food,index)=>{
