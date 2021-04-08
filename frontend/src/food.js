@@ -6,12 +6,16 @@ export default class Food extends Component {
         super(props);
 
         this.state={
-            foods:[]
+            foods:[],
+            searchedFoods:[]
         }
     }
 
     searchFood(value){
-        console.log(value);
+        
+        let searchedFoods=this.state.foods.filter((food,index)=>{
+            return foods.name.includes(value);
+        })
     }
 
     componentDidMount(){
