@@ -12,11 +12,17 @@ export default class Food extends Component {
     }
 
     searchFood(value){
+
+        if(value!=""){
+
         
-        let searchedFoods=this.state.foods.filter((food,index)=>{
-            return food.name.toLowercase().includes(value.toLowercase());
+        let searchedArray=this.state.foods.filter((food,index)=>{
+            return food.name.toLowerCase().includes(value.toLowerCase());
         })
+
+        this.setState({searchedFoods:searchedArray});
     }
+}
 
     componentDidMount(){
 
@@ -41,7 +47,7 @@ export default class Food extends Component {
                 </div>
                 <div className="search-result">
                     {
-                        this.state.foods.map((food,index)=>(
+                        this.state.searchedFoods.map((food,index)=>(
                             <div className="result" key={index}>
                                     {food.name}
                          </div>
