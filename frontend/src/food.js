@@ -20,6 +20,10 @@ export default class Food extends Component {
         }
     }
 
+    selectFood(food){
+        this.setState({currentFood:food});
+    }
+
     searchFood(value){
 
         if(value!=""){
