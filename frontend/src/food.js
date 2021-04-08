@@ -65,7 +65,9 @@ export default class Food extends Component {
                 <div className="search-result">
                     {
                         this.state.searchedFoods.map((food,index)=>(
-                            <div className="result" key={index}>
+                            <div className="result" onClick={()=>{
+                                this.selectFood(food);
+                            }} key={index}>
                                     {food.name}
                          </div>
                         ))
