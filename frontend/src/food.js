@@ -22,6 +22,10 @@ export default class Food extends Component {
 
         this.setState({searchedFoods:searchedArray});
     }
+
+    else {
+        this.setState({searchedFoods:[]});
+    }
 }
 
     componentDidMount(){
