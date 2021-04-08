@@ -14,7 +14,7 @@ export default class Food extends Component {
     searchFood(value){
         
         let searchedFoods=this.state.foods.filter((food,index)=>{
-            return foods.name.includes(value);
+            return food.name.toLowercase().includes(value.toLowercase());
         })
     }
 
