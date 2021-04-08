@@ -1,4 +1,6 @@
-
+.result:hover{
+  background-color: lightgray;
+}
 
 .App-logo {
   height: 40vmin;
