@@ -59,6 +59,23 @@ export default class Food extends Component {
                     }
                     
                 </div>
+
+                    <div className="product-display">
+                        <table className="table">
+                            <tr>
+                                <td>Name</td>
+                                <th>Calories</th>
+                                <th>Protein</th>
+                                <th>Carbs</th>
+                                <th>Fiber</th>
+                                <th>Fat</th>
+                                <th>Weight</th>
+                            </tr>
+                        </table>
+
+                    </div>
+
+
             </div>
         )
     }
