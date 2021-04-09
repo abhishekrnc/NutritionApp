@@ -24,6 +24,17 @@ export default class Food extends Component {
         this.setState({currentFood:food});
     }
 
+
+    calculatechanges(weight){
+        let currFood=this.state.currentFood;
+
+        currFood.calories=(currFood.calories*weight)/currFood.weight;
+        currFood.calories=(currFood.calories*weight)/currFood.weight;
+        currFood.calories=(currFood.calories*weight)/currFood.weight;
+        currFood.calories=(currFood.calories*weight)/currFood.weight;
+    }
+
+
     searchFood(value){
 
         if(value!==""){
